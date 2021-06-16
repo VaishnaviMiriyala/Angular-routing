@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+        <th>Cart</th>
+    </tr>
+    <tr *ngFor="let product of getallLaptops()">
+        <td>{{product.productName}}</td>
+        <td>{{product.productCost}}</td>
+        <button (click) = "addToCart(product)">Add To Cart</button>
+    </tr>
+
+</table>
